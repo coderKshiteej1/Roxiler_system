@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    text-decoration: none;
+    /* Removes the underline */
+    color: inherit;
+    /* Inherits the color from the parent element */
+}
+
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.boxShadow {
+    -webkit-box-shadow: 0px 0px 22px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 22px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 22px -12px rgba(0, 0, 0, 0.75);
+}
+
+.default-input {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.default-btn {
+    background-color: none;
+    border: none;
+    width: 100px;
+    padding: 7px 14px;
+    margin: 0px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.opacity50 {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.opacity100 {
+    opacity: 1;
+}
+
+.flex_space_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_center_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin_auto {
+    margin: auto;
+}
+
+.glassify {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 22px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.underline{
+    text-decoration: underline;
+    text-shadow: rgba(0, 0, 0, 0.348) 0px 0px 12px;
+}
+.bg{
+    background: rgba(199, 199, 199, 0.568);
+}
+
+
+/* custome scroller */
+
+body {
+    --sb-track-color: #eaeaea;
+    --sb-thumb-color: #404040;
+    --sb-size: 3px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+  .footer{
+    text-align: center;
+    background-color: #ececec;
+    margin: 10px 0px ;
+  }
+  .footer > {
+    text-align: center;
+    background-color: purple;
+  }

@@ -1,0 +1,65 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 15px;
+    width: 100%;
+
+}
+
+
+.Statistics-main {
+    margin-top: 70px;
+}
+
+.Statistics-container {
+    border-radius: 14px;
+    padding: 15px;
+}
+
+.chart {
+    margin-top: 30px;
+}
+
+.sellsDiv {
+    margin-top: 50px;
+    width: 250px;
+    border-radius: 12px;
+    padding: 10px 0px;
+    background-color: rgb(230, 230, 230);
+}
+
+#sells_chart_table>tr>th {
+    text-align: left;
+    padding-right: 10px;
+}
+
+
+@media (max-width: 1150px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media (max-width: 520px) {
+    h2 {
+        font-size: larger;
+    }
+    .default-input {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .default-btn {
+        width: 70px;
+        padding: 4px 8px;
+        margin: 0px 2px;
+        border-radius: 4px;
+    }
+    
+}
+
+ 
